@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Trybewarts</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
 </head>
 <body>
     <header class="header"></header>
 </body>
 <header class="header">
     <img class= 'trybewarts-header-logo'src="images/trybewarts-header-logo.svg" alt="">
-    <form action="#" method="post" class="trybewarts-login">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Senha">
-        <button>Entrar</button>
+    <form action="" method="post" class="trybewarts-login">
+        <input id="email" type="email" name="email" placeholder="Email">
+        <input id="password" type="password" name="password" placeholder="Senha">
+        <button onclick="VerifyUser()" id="btnEnter">Entrar</button>
     </form>
 </header>
 </html>
