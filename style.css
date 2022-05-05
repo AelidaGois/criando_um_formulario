@@ -34,3 +34,7 @@ hr {
 .rate {
   display: flex;
 }
+
+textarea {
+  resize: none;
+}
