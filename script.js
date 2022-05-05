@@ -12,4 +12,8 @@ function VerifyUser() {
   }
 }
 
+function enableBtn() {
+  document.getElementById('submit-btn').disabled = false
+}
+
 // document.getElementById ('btnEnter').addEventListener('click', VerifyUser)
