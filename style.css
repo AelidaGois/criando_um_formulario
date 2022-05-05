@@ -26,3 +26,11 @@ main {
 ul {
   list-style: none;
 }
+
+hr {
+  width: 70%;
+}
+
+.rate {
+  display: flex;
+}
