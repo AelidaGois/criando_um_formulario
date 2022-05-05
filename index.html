@@ -21,16 +21,21 @@
 </header>
 <main>
     <form id='evaluation-form'action="">
+        <div id="name-lastName">
         <input id='input-name' type="text" placeholder="Nome">
         <input id='input-lastname' type="text" placeholder="Sobrenome">
+        </div>
+        <div id="email-house">
         <input id='input-email' type="text" placeholder="Email">
-        <select name="" id="house">
+        <label for="house">Casa: </label>
+        <select name="house" id="house">
             <option text="Empty" value="Empty">Select</option>
             <option text="Gitnória" id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option text="Reactpuff" id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option text="Corvinode" id="corvinode-house" value="Corvinode">Corvinode</option>
             <option text="Pytherina" id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
+        </div>
         <hr>
         <label for="family" id="label-family">Qual sua família?</label>
         <ul>

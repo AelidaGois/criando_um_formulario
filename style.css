@@ -38,3 +38,11 @@ hr {
 textarea {
   resize: none;
 }
+
+#name-lastName {
+  display: flex;
+}
+
+#email-house {
+  display: flex;
+}
