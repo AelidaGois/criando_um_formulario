@@ -23,7 +23,7 @@ main {
   height: 500px;
 }
 
-ul {
+li {
   list-style: none;
 }
 
@@ -45,4 +45,8 @@ textarea {
 
 #email-house {
   display: flex;
+}
+
+#label-infos {
+    display: flex;
 }
