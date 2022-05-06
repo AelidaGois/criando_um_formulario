@@ -2,6 +2,7 @@
 // let btnEnter = document.getElementById ('btnEnter');
 
 
+
 function VerifyUser() {
   console.log('clicked')
   if (document.getElementById ('email').value === 'tryber@teste.com' && document.getElementById ('password').value === '123456') {
@@ -16,16 +17,37 @@ function enableBtn() {
   document.getElementById('submit-btn').disabled = false
 }
 
-function deleteForm() {
-  let name = document.getElementById('input-name').value
-  let lastName = document.getElementById('input-lastname').value
-  let email = document.getElementById('input-email').value
-  let house = document.getElementById('house').value
-  let family =Array.from(document.getElementsByClassName('family'))
-  
-  for (let i=0; i<family.length; i++) {
-    family
+function saveData() {
+const infos = {
+  name: document.getElementById('input-name').value,
+  lastName: document.getElementById('input-lastname').value,
+  email: document.getElementById('input-email').value,
+  house: document.getElementById('house').value,
+  family: '',
+  materias: '',
+  avaliacao: '',
+  observacoes: ''
+}
+
+  let familyArray = Array.from(document.getElementsByClassName('family'))
+
+  for (let i=0; i<familyArray.length; i++) {
+    if (familyArray[i].checked) {
+     infos.family = familyArray[i].value
+    }
+    console.log(infos.family)
+  }
+}
+
+  function deleteForm() {
+    let main = document.getElementById('main')
+
+    main.removeChild(main.firstChild)
   }
 
-}
+  function printInfos () {
+
+  }
+  
+
 // document.getElementById ('btnEnter').addEventListener('click', VerifyUser)

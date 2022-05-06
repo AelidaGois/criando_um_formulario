@@ -22,7 +22,7 @@
     </div>
     
 </header>
-<main>
+<main id='main'>
     <form id='evaluation-form'action="">
         <div id="name-lastName">
         <input id='input-name' type="text" placeholder="Nome">
@@ -75,7 +75,7 @@
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <li><input onchange="enableBtn()" type="checkbox" name="agreement" id="agreement"> Concordo.</li>
         </div>
-        <button onclick="deleteForm()" disabled type="submit" id="submit-btn">Enviar</button>
+        <button onclick="saveData(), deleteForm()" disabled type="submit" id="submit-btn">Enviar</button>
     </form>
     <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
 </main>
