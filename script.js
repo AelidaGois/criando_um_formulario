@@ -58,7 +58,7 @@ function saveData() {
 
 function contarCaracteres(elemento) {
   const limite = elemento.maxLength;
-  const divCont = document.getElementById('cont');
+  const divCont = document.getElementById('counter');
   const campo = elemento.value.length;
   const restante = limite - campo;
   divCont.innerText = restante;
@@ -85,6 +85,10 @@ function deleteForm() {
 
 const btn = document.getElementById('btnEnter');
 const submitbtn = document.getElementById('submit-btn');
+const textdiv = document.getElementById('textarea');
+const agree = document.getElementById('agreement');
 btn.addEventListener('click', VerifyUser);
 submitbtn.addEventListener('click', saveData);
 submitbtn.addEventListener('click', deleteForm);
+// textdiv.addEventListener('keypress', contarCaracteres);
+agree.addEventListener('change', enableBtn);

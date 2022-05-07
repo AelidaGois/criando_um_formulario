@@ -72,10 +72,11 @@
         </div>
         <label class="textarea" for="textarea">Deixe seu comentário:</label>
         <textarea id='textarea' name="textarea" class="textarea" cols="30" rows="10"  maxlength="500" onkeyup="contarCaracteres(textarea)"></textarea>
-        <div id="cont"></div>
+        <div id="counter"></div>
         <div id="label-infos">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <li><input onchange="enableBtn()" type="checkbox" name="agreement" id="agreement"> Concordo.</li>
+        <li><input type="checkbox" name="agreement" id="agreement"> Concordo.</li>
+        <!-- onchange="enableBtn()"  -->
         </div>
         <button onclick="saveData(), deleteForm(), printInfos()" disabled type="submit" id="submit-btn">Enviar</button>
     </form>
