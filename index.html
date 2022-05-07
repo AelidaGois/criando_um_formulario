@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Trybewarts</title>
     <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
+    <!-- <script src="/script.js"></script> -->
 </head>
 <body>
     <header class="header">
@@ -17,7 +17,8 @@
         <form action="" method="post" class="trybewarts-login">
             <div><input id="email" type="email" name="email" placeholder="Email"></div>
             <div><input id="password" type="password" name="password" placeholder="Senha"></div> 
-            <div><button onclick="VerifyUser()" id="btnEnter">Entrar</button></div>
+            <div><button id="btnEnter">Entrar</button></div>
+            <!-- onclick="VerifyUser()" -->
         </form>
     </div>
     
@@ -70,12 +71,8 @@
             <input class="rate" type="radio" name="rate" id="10">10
         </div>
         <label class="textarea" for="textarea">Deixe seu comentário:</label>
-<<<<<<< HEAD
-        <textarea id="textarea" name="textarea" class="textarea" cols="30" rows="10" maxlength="500"></textarea>
-=======
-        <textarea id='contador' name="textarea" class="textarea" cols="30" rows="10"  maxlength="500" onkeyup="contarCaracteres(textarea)"></textarea>
+        <textarea id='textarea' name="textarea" class="textarea" cols="30" rows="10"  maxlength="500" onkeyup="contarCaracteres(textarea)"></textarea>
         <div id="cont"></div>
->>>>>>> b695c4baff6625977c6784ffdfe36eae9023081a
         <div id="label-infos">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <li><input onchange="enableBtn()" type="checkbox" name="agreement" id="agreement"> Concordo.</li>
@@ -88,4 +85,5 @@
     <p>Direitos reservados à Trybewarts©</p>
 </footer>
 </body>
+<script src="/script.js"></script>
 </html>
