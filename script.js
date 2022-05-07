@@ -10,7 +10,7 @@ function VerifyUser() {
   else {
     alert('Email ou senha inválidos.');
   }
-}
+};
 
 function enableBtn() {
   document.getElementById('submit-btn').disabled = false;
@@ -51,6 +51,15 @@ function saveData() {
     }
   }
   // document.querySelectorAll("input:checkbox[type=text]:checked")
+}
+// document.getElementById ('btnEnter').addEventListener('click', VerifyUser)
+
+function contarCaracteres (elemento) {
+  let limite = elemento.maxLength;
+  let divCont = document.getElementById('cont');
+  let campo = elemento.value.length;
+  let restante = limite - campo;
+  divCont.innerText = restante;
 }
 
 function deleteForm() {
