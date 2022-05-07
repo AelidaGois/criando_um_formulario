@@ -48,34 +48,34 @@
         </ul>
         <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <ul>
-            <li><input type="checkbox" value="HoFs" name="content" id="HoFs">HoFs</li>
-            <li><input type="checkbox" value="Jest" name="content" id="Jest">Jest</li>
-            <li><input type="checkbox" value="Promises" name="content" id="Promises">Promises</li>
-            <li><input type="checkbox" value="React" name="content" id="React">React</li> 
-            <li><input type="checkbox" value="SQL" name="content" id="SQL">SQL</li>
-            <li><input type="checkbox" value="Python" name="content" id="Python">Python</li>
+            <li><input class="content subject" type="checkbox" value="HoFs" name="content" id="HoFs">HoFs</li>
+            <li><input class="content subject" type="checkbox" value="Jest" name="content" id="Jest">Jest</li>
+            <li><input class="content subject" type="checkbox" value="Promises" name="content" id="Promises">Promises</li>
+            <li><input class="content subject" type="checkbox" value="React" name="content" id="React">React</li> 
+            <li><input class="content subject" type="checkbox" value="SQL" name="content" id="SQL">SQL</li>
+            <li><input class="content subject" type="checkbox" value="Python" name="content" id="Python">Python</li>
         </ul>
         <hr>
         <div class="rate">
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
-            <input type="radio" name="rate" id="1">1
-            <input type="radio" name="rate" id="2">2
-            <input type="radio" name="rate" id="3">3
-            <input type="radio" name="rate" id="4">4
-            <input type="radio" name="rate" id="5">5
-            <input type="radio" name="rate" id="6">6
-            <input type="radio" name="rate" id="7">7
-            <input type="radio" name="rate" id="8">8
-            <input type="radio" name="rate" id="9">9
-            <input type="radio" name="rate" id="10">10
+            <input class="rate" type="radio" name="rate" id="1">1
+            <input class="rate" type="radio" name="rate" id="2">2
+            <input class="rate" type="radio" name="rate" id="3">3
+            <input class="rate" type="radio" name="rate" id="4">4
+            <input class="rate" type="radio" name="rate" id="5">5
+            <input class="rate" type="radio" name="rate" id="6">6
+            <input class="rate" type="radio" name="rate" id="7">7
+            <input class="rate" type="radio" name="rate" id="8">8
+            <input class="rate" type="radio" name="rate" id="9">9
+            <input class="rate" type="radio" name="rate" id="10">10
         </div>
         <label class="textarea" for="textarea">Deixe seu comentário:</label>
-        <textarea name="textarea" class="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <textarea id="textarea" name="textarea" class="textarea" cols="30" rows="10" maxlength="500"></textarea>
         <div id="label-infos">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <li><input onchange="enableBtn()" type="checkbox" name="agreement" id="agreement"> Concordo.</li>
         </div>
-        <button onclick="saveData(), deleteForm()" disabled type="submit" id="submit-btn">Enviar</button>
+        <button onclick="saveData(), deleteForm(), printInfos()" disabled type="submit" id="submit-btn">Enviar</button>
     </form>
     <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
 </main>

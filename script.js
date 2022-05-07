@@ -1,53 +1,74 @@
-
-// let btnEnter = document.getElementById ('btnEnter');
-
-
+const infos = {};
 
 function VerifyUser() {
-  console.log('clicked')
-  if (document.getElementById ('email').value === 'tryber@teste.com' && document.getElementById ('password').value === '123456') {
-    alert('Olá, Tryber!');
+  console.log('clicked');
+  const emailValue = document.getElementById('email').value;
+  const passwordValue = document.getElementById('password').value;
+  if (emailValue === 'tryber@teste.com' && passwordValue === '123456') {
+    alert('Olá, Tryber!'); 
   }
   else {
-    alert('Email ou senha inválidos.')
+    alert('Email ou senha inválidos.');
   }
 }
 
 function enableBtn() {
-  document.getElementById('submit-btn').disabled = false
+  document.getElementById('submit-btn').disabled = false;
 }
 
 function saveData() {
-const infos = {
-  name: document.getElementById('input-name').value,
-  lastName: document.getElementById('input-lastname').value,
-  email: document.getElementById('input-email').value,
-  house: document.getElementById('house').value,
-  family: '',
-  materias: '',
-  avaliacao: '',
-  observacoes: ''
-}
+  const familyArray = Array.from(document.getElementsByClassName('family'));
+  const languages = Array.from(document.getElementsByClassName('content'));
+  const rate = Array.from(document.getElementsByClassName('rate'));
 
-  let familyArray = Array.from(document.getElementsByClassName('family'))
+  infos.name = document.getElementById('input-name').value;
+  infos.lastName = document.getElementById('input-lastname').value;
+  infos.email = document.getElementById('input-email').value;
+  infos.house = document.getElementById('house').value;
+  infos.family = '';
+  infos.language = [];
+  infos.avaliacao = '';
+  infos.observacoes = document.getElementById('textarea').value;
 
-  for (let i=0; i<familyArray.length; i++) {
+  for (let i = 0; i < familyArray.length; i += 1) {
     if (familyArray[i].checked) {
-     infos.family = familyArray[i].value
+      infos.family = familyArray[i].value;
     }
-    console.log(infos.family)
+    console.log(infos.family);
   }
+
+  for (let i = 0; i < languages.length; i += 1) {
+    if (languages[i].checked === true) {
+      infos.language.push(languages[i].value);
+      console.log(infos.language);
+    }
+  }
+
+  for (let i = 0; i < rate.length; i += 1) {
+    if (rate[i].checked) {
+      infos.avaliacao = rate[i].id;
+      console.log(infos.avaliacao);
+    }
+  }
+  // document.querySelectorAll("input:checkbox[type=text]:checked")
 }
 
-  function deleteForm() {
-    let main = document.getElementById('main')
+function deleteForm() {
+  // document.getElementById('main').removeChild(main.children[0])
+  document.getElementById('evaluation-form').innerHTML = '';
+}
 
-    main.removeChild(main.firstChild)
-  }
+function printInfos() {
+  const para = document.createElement('p');
+  para.innerText = `Nome: ${infos.name} ${infos.lastName} 
+    Email:${infos.email} 
+    Casa: ${infos.house}
+    Família: ${infos.family} 
+    Matérias: ${infos.language} 
+    Avaliação: ${infos.avaliacao} 
+    Observações: ${infos.observacoes}`;
 
-  function printInfos () {
-
-  }
-  
+  document.getElementById('evaluation-form').appendChild(para);
+}
 
 // document.getElementById ('btnEnter').addEventListener('click', VerifyUser)
