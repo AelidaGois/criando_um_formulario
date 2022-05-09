@@ -37,6 +37,7 @@ function getFamily() {
 
 function saveData() {
   const languages = Array.from(document.getElementsByClassName('content'));
+
   infos.lastName = document.getElementById('input-lastname').value;
   infos.email = document.getElementById('input-email').value;
   infos.house = document.getElementById('house').value;
@@ -49,9 +50,7 @@ function saveData() {
       infos.language.push(languages[i].value);
     }
   }
-  let teste = document.querySelector('[name="rate"]:checked').value;
-  infos.avaliacao = teste
-
+  infos.avaliacao = document.querySelector('[name="rate"]:checked').value;
   getFamily();
 }
 
@@ -63,12 +62,6 @@ function contarCaracteres() {
   const campo = document.getElementById('textarea').value.length;
   const restante = limite - campo;
   divCont.innerText = restante;
-
-  // function contarCaracteres(elemento) {
-  //   const limite = elemento.maxLength;
-  //   const divCont = document.getElementById('counter');
-  //   const campo = elemento.value.length;
-  // >>>>>>> b8bbb8d82d4a321bdebfa084b5185c0be8e1ead1
 }
 
 function printInfos() {
@@ -77,7 +70,7 @@ function printInfos() {
     Email: ${infos.email}
     Casa: ${infos.house}
     Família: ${infos.family}
-    Matérias: ${infos.language} 
+    Matérias: ${infos.language[0]}, ${infos.language[1]}, ${infos.language[2]} 
     Avaliação: ${infos.avaliacao} 
     Observações: ${infos.observacoes}`;
 
