@@ -55,10 +55,8 @@ function saveData() {
 }
 
 function contarCaracteres() {
-  // const limite = elemento.maxLength;
   const limite = document.getElementById('textarea').maxLength;
   const divCont = document.getElementById('counter');
-  // const campo = elemento.value.length;
   const campo = document.getElementById('textarea').value.length;
   const restante = limite - campo;
   divCont.innerText = restante;
@@ -73,12 +71,10 @@ function printInfos() {
     Matérias: ${infos.language[0]}, ${infos.language[1]}, ${infos.language[2]} 
     Avaliação: ${infos.avaliacao} 
     Observações: ${infos.observacoes}`;
-
   document.getElementById('evaluation-form').appendChild(para);
 }
 
 function deleteForm() {
-  // document.getElementById('main').removeChild(main.children[0])
   document.getElementById('evaluation-form').innerHTML = '';
   printInfos();
 }
