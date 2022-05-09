@@ -25,7 +25,7 @@
 </header>
 <main id='main'>
     <form id='evaluation-form'action="">
-        <div id="name-lastName">git a
+        <div id="name-lastName">
         <input id='input-name' type="text" placeholder="Nome">
         <input id='input-lastname' type="text" placeholder="Sobrenome">
         </div>
@@ -59,32 +59,28 @@
         <hr>
         <div class="rate">
         <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
-            <input class="rate" type="radio" name="rate" id="1">1
-            <input class="rate" type="radio" name="rate" id="2">2
-            <input class="rate" type="radio" name="rate" id="3">3
-            <input class="rate" type="radio" name="rate" id="4">4
-            <input class="rate" type="radio" name="rate" id="5">5
-            <input class="rate" type="radio" name="rate" id="6">6
-            <input class="rate" type="radio" name="rate" id="7">7
-            <input class="rate" type="radio" name="rate" id="8">8
-            <input class="rate" type="radio" name="rate" id="9">9
-            <input class="rate" type="radio" name="rate" id="10">10
+            <input class="rate" type="radio" name="rate" value="1" id="1">1
+            <input class="rate" type="radio" name="rate" value="2" id="2">2
+            <input class="rate" type="radio" name="rate" value="3" id="3">3
+            <input class="rate" type="radio" name="rate" value="4" id="4">4
+            <input class="rate" type="radio" name="rate" value="5" id="5">5
+            <input class="rate" type="radio" name="rate" value="6" id="6">6
+            <input class="rate" type="radio" name="rate" value="7" id="7">7
+            <input class="rate" type="radio" name="rate" value="8" id="8">8
+            <input class="rate" type="radio" name="rate" value="9" id="9">9
+            <input class="rate" type="radio" name="rate" value="10" id="10">10
         </div>
         <label class="textarea" for="textarea">Deixe seu comentário:</label>
-<<<<<<< HEAD
-        <textarea id='textarea' name="textarea" class="textarea" cols="30" rows="10" maxlength="500"></textarea>
-        <!-- onkeyup="contarCaracteres(textarea)" -->
-        <div id="counter"></div>
-=======
-        <textarea id='textarea' name="textarea" class="textarea" cols="30" rows="10"  maxLength="500"  onkeyup="contarCaracteres(textarea)"></textarea>
+        <textarea id='textarea' name="textarea" class="textarea" cols="30" rows="10"  maxLength="500"></textarea>
+        <!-- onkeyup="contarCaracteres(textarea) -->
         <div id="counter">500</div>
->>>>>>> b8bbb8d82d4a321bdebfa084b5185c0be8e1ead1
         <div id="label-infos">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <li><input type="checkbox" name="agreement" id="agreement"> Concordo.</li>
         <!-- onchange="enableBtn()"  -->
         </div>
-        <button onclick="saveData(), deleteForm(), printInfos()" disabled type="submit" id="submit-btn">Enviar</button>
+        <button  disabled type="submit" id="submit-btn">Enviar</button>
+        <!-- onclick="saveData(), deleteForm(), printInfos()" -->
     </form>
     <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
 </main>

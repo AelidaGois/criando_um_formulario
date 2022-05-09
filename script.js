@@ -15,16 +15,15 @@ function enableBtn() {
   document.getElementById('submit-btn').disabled = false;
 }
 
-function getRate() {
-  const rate = Array.from(document.getElementsByClassName('rate'));
-  infos.avaliacao = '';
-  for (let i = 0; i < rate.length; i += 1) {
-    if (rate[i].checked) {
-      infos.avaliacao = rate[i].id;
-      console.log(infos.avaliacao);
-    }
-  }
-}
+// function getRate() {
+//   const rate = Array.from(document.getElementsByClassName('rate'));
+//   infos.avaliacao = '';
+//   for (let i = 0; i < rate.length; i += 1) {
+//     if (rate[i].checked) {
+//       infos.avaliacao = rate[i].id;
+//     }
+//   }
+// }
 
 function getFamily() {
   const familyArray = Array.from(document.getElementsByClassName('family'));
@@ -38,22 +37,22 @@ function getFamily() {
 
 function saveData() {
   const languages = Array.from(document.getElementsByClassName('content'));
-  infos.name = document.getElementById('input-name').value;
   infos.lastName = document.getElementById('input-lastname').value;
   infos.email = document.getElementById('input-email').value;
   infos.house = document.getElementById('house').value;
   infos.language = [];
   infos.observacoes = document.getElementById('textarea').value;
+  infos.name = document.getElementById('input-name').value;
 
   for (let i = 0; i < languages.length; i += 1) {
     if (languages[i].checked === true) {
       infos.language.push(languages[i].value);
-      console.log(infos.language);
     }
   }
-  getRate();
+  let teste = document.querySelector('[name="rate"]:checked').value;
+  infos.avaliacao = teste
+
   getFamily();
-  // document.querySelectorAll("input:checkbox[type=text]:checked")
 }
 
 function contarCaracteres() {
@@ -75,7 +74,7 @@ function contarCaracteres() {
 function printInfos() {
   const para = document.createElement('p');
   para.innerText = `Nome: ${infos.name} ${infos.lastName} 
-    Email:${infos.email}
+    Email: ${infos.email}
     Casa: ${infos.house}
     Família: ${infos.family}
     Matérias: ${infos.language} 
