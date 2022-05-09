@@ -75,3 +75,7 @@ textarea {
 #label-infos {
   display: flex;
 }
+
+.body {
+  cursor: url('https://imagensemoldes.com.br/wp-content/uploads/2020/07/Varinha-Fleur-Delacour-Harry-Potter-PNG.png'), auto;
+}

@@ -68,7 +68,7 @@ function printInfos() {
     Email: ${infos.email}
     Casa: ${infos.house}
     Família: ${infos.family}
-    Matérias: ${infos.language[0]}, ${infos.language[1]}, ${infos.language[2]} 
+    Matérias: ${infos.language.join(', ')}
     Avaliação: ${infos.avaliacao} 
     Observações: ${infos.observacoes}`;
   document.getElementById('evaluation-form').appendChild(para);
