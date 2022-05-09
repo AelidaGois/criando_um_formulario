@@ -58,7 +58,7 @@ function saveData() {
 
 function contarCaracteres(elemento) {
   const limite = elemento.maxLength;
-  const divCont = document.getElementById('cont');
+  const divCont = document.getElementById('counter');
   const campo = elemento.value.length;
   const restante = limite - campo;
   divCont.innerText = restante;
@@ -67,9 +67,9 @@ function contarCaracteres(elemento) {
 function printInfos() {
   const para = document.createElement('p');
   para.innerText = `Nome: ${infos.name} ${infos.lastName} 
-    Email:${infos.email} 
+    Email:${infos.email}
     Casa: ${infos.house}
-    Família: ${infos.family} 
+    Família: ${infos.family}
     Matérias: ${infos.language} 
     Avaliação: ${infos.avaliacao} 
     Observações: ${infos.observacoes}`;
