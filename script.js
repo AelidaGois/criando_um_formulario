@@ -56,10 +56,12 @@ function saveData() {
   // document.querySelectorAll("input:checkbox[type=text]:checked")
 }
 
-function contarCaracteres(elemento) {
-  const limite = elemento.maxLength;
+function contarCaracteres() {
+  // const limite = elemento.maxLength;
+  const limite = document.getElementById('textarea').maxLength;
   const divCont = document.getElementById('counter');
-  const campo = elemento.value.length;
+  // const campo = elemento.value.length;
+  const campo = document.getElementById('textarea').value.length;
   const restante = limite - campo;
   divCont.innerText = restante;
 }
@@ -90,5 +92,5 @@ const agree = document.getElementById('agreement');
 btn.addEventListener('click', VerifyUser);
 submitbtn.addEventListener('click', saveData);
 submitbtn.addEventListener('click', deleteForm);
-// textdiv.addEventListener('keypress', contarCaracteres);
+textdiv.addEventListener('keyup', contarCaracteres);
 agree.addEventListener('change', enableBtn);
