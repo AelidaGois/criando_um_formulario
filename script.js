@@ -64,14 +64,20 @@ function contarCaracteres() {
   const campo = document.getElementById('textarea').value.length;
   const restante = limite - campo;
   divCont.innerText = restante;
+
+  // function contarCaracteres(elemento) {
+  //   const limite = elemento.maxLength;
+  //   const divCont = document.getElementById('counter');
+  //   const campo = elemento.value.length;
+  // >>>>>>> b8bbb8d82d4a321bdebfa084b5185c0be8e1ead1
 }
 
 function printInfos() {
   const para = document.createElement('p');
   para.innerText = `Nome: ${infos.name} ${infos.lastName} 
-    Email:${infos.email} 
+    Email:${infos.email}
     Casa: ${infos.house}
-    Família: ${infos.family} 
+    Família: ${infos.family}
     Matérias: ${infos.language} 
     Avaliação: ${infos.avaliacao} 
     Observações: ${infos.observacoes}`;
