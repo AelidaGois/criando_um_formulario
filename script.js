@@ -70,7 +70,7 @@ function printInfos() {
     Email: ${infos.email}
     Casa: ${infos.house}
     Família: ${infos.family}
-    Matérias: ${infos.language[0]}, ${infos.language[1]}, ${infos.language[2]} 
+    Matérias: ${infos.language[0]}, ${infos.language[1]}statu, ${infos.language[2]} 
     Avaliação: ${infos.avaliacao} 
     Observações: ${infos.observacoes}`;
 
