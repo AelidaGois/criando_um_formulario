@@ -49,8 +49,8 @@ function saveData() {
       infos.language.push(languages[i].value);
     }
   }
-  let teste = document.querySelector('[name="rate"]:checked').value;
-  infos.avaliacao = teste
+  const teste = document.querySelector('[name="rate"]:checked').value;
+  infos.avaliacao = teste;
 
   getFamily();
 }
