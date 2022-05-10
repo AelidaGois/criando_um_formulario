@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Trybewarts</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style type="text/css">body, a:hover, input {cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress !important;}</style>
     <link href="//db.onlinewebfonts.com/c/0421d4186d6efbfc5331fe180895e780?family=Harry+Potter" rel="stylesheet" type="text/css"/>
     <!-- <script src="/script.js"></script> -->
@@ -20,8 +21,8 @@
     <h1 id='trybewarts-header-title'>Trybewarts</h1>
     <div class="div-form-trybewarts-login">
         <form action="" method="post" class="trybewarts-login">
-            <div><input id="email" type="email" name="email" placeholder="Email"></div>
-            <div><input id="password" type="password" name="password" placeholder="Senha"></div> 
+            <div><input class="form-control" id="email" type="email" name="email" placeholder="Email"></div>
+            <div><input class="form-control" id="password" type="password" name="password" placeholder="Senha"></div> 
             <div><button id="btnEnter">Entrar</button></div>
             <!-- onclick="VerifyUser()" -->
         </form>
@@ -31,13 +32,18 @@
 <main id='main'>
     <form id='evaluation-form'action="">
         <div id="name-lastName">
-        <input id='input-name' type="text" placeholder="Nome">
-        <input id='input-lastname' type="text" placeholder="Sobrenome">
+            <div>
+                <input class="form-control" id='input-name' type="text" placeholder="Nome">
+            </div>
+        <div>
+            <input class="form-control" id='input-lastname' type="text" placeholder="Sobrenome">
+        </div>
+        
         </div>
         <div id="email-house">
-        <input id='input-email' type="text" placeholder="Email">
+        <input class="form-control" id='input-email' type="text" placeholder="Email">
         <label for="house">Casa: </label>
-        <select name="house" id="house">
+        <select class="custom-select" name="house" id="house">
             <option text="Empty" value="Empty">Select</option>
             <option text="Gitnória" id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option text="Reactpuff" id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -84,7 +90,7 @@
         <li><input type="checkbox" name="agreement" id="agreement"> Concordo.</li>
         <!-- onchange="enableBtn()"  -->
         </div>
-        <button  disabled type="submit" id="submit-btn">Enviar</button>
+        <button class="btn btn-primary btn-lg"  disabled type="submit" id="submit-btn">Enviar</button>
         <!-- onclick="saveData(), deleteForm(), printInfos()" -->
     </form>
     <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
