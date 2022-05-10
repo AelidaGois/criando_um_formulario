@@ -1,10 +1,10 @@
 body {
-  background-color: #f5f1e2;
+  background-color: rgb(245, 241, 226);
 }
 
 .header {
   display: flex;
-  background-color: #32a791;
+  background-color: rgb(50, 167, 145);
   max-width: 100%;
   height: 100px;
   justify-content: space-between;
@@ -16,7 +16,7 @@ body {
 }
 
 #trybewarts-header-title {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 50px;
 }
 
@@ -37,7 +37,7 @@ body {
 #main {
   display: flex;
   margin-top: 2%;
-  border: 4px solid green;
+  border: 4px solid rgb(0, 128, 0);
   justify-content: center;
 
 }
