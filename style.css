@@ -39,7 +39,6 @@ body {
   display: flex;
   margin-top: 2%;
   justify-content: center;
-
 }
 
 #evaluation-form {
@@ -132,7 +131,6 @@ h1 {
 
 footer {
   background-color: rgb(50, 167, 145);
-
 }
 
 #family-content li {
@@ -152,11 +150,9 @@ span {
 }
 
 #family-radio {
-  display: flex;
+  width: 60%;
   margin-top: 25px;
-  justify-content: space-evenly;
   padding: 0;
-
 }
 
 #family {
