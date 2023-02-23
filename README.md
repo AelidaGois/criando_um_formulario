@@ -1,9 +1,11 @@
 # Olá, eu sou a Aélida Gois!
 
-Neste repositório será possível ter acesso ao Projeto TrybeWarts, um projeto que possui como objetivo:
+Neste repositório será possível ter acesso ao Projeto TrybeWarts, um projeto que possui como objetivo:##
 
 *Criar um Formulário
+##
 *Utilizar FlexBox para estilização
+##
 *Aplicar responsividade de tela
 
 Atualmente focando o tempo nos estudos 👩‍🎓
